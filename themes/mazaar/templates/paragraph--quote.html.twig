@@ -1,0 +1,26 @@
+{%
+    set classes = [
+        'paragraph',
+        'paragraph--type--' ~ paragraph.bundle|clean_class,
+        view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+        not pargraph.isPublished() ? 'paragraph--unpublished'
+    ]
+%}
+
+{% block paragraph%}
+    <div{{attributes.addClass(classes)}}>
+        {% block content %}
+        <div class="quote"> {{content|without('field_quote_author_name', 'field_quote_author_headline', 'field_quote_author_image')}} </div>
+        <div class="quote_extra">
+            <div class="quote_img"> {{content.field_quote_author_image}}</div>
+            <div class="quote_author">
+            {{content.field_quote_author_name}}
+            {{content.field_quote_author_headline}}
+            </div>
+        </div>
+
+        {% endblock %}
+
+    </div>
+
+{% endblock paragraph%}

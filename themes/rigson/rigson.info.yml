@@ -1,0 +1,13 @@
+name: rigson
+type: theme
+base theme: classy
+description: 'A theme full of mmmmmm'
+core_version_requirement: ^8 || ^9
+libraries:
+- rigson/global
+regions:
+  header: header
+  primary_menu: primary_menu
+  content: content
+  footer: footer
+  disabled: disabled

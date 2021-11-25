@@ -1,0 +1,15 @@
+name: mazaar
+type: theme
+base theme: classy
+description: 'A theme in dedication to the goddess of the sea.'
+core_version_requirement: ^8 || ^9
+
+libraries:
+- mazaar/base
+
+regions:
+  header: header
+  primary_menu: primary_menu
+  content: content
+  footer: footer
+  disabled: disabled

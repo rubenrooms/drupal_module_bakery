@@ -1,0 +1,352 @@
+body {
+    background-color: #3d3d3d;
+  color: white;
+}
+
+#block-mazaar-branding{
+  display: none;
+}
+
+/*MENU ITEMS*/
+.main-menu{
+  margin-top: 2em;
+  width: 100%;
+  margin-left: 0;
+  padding: 0;
+}
+
+.menu-item{
+    display: inline;
+    margin: 0 8%;
+}
+
+.menu-item a{
+   text-decoration: none;
+   color: white;
+  font-size: 1.2em;
+}
+
+.menu-item a:hover{
+   color: royalblue;
+}
+
+ul.main-menu a.is-active{
+    color: royalblue;
+  font-weight: bold;
+}
+.navigation h2{
+  display: none;
+}
+/*HOME PAGE*/
+
+.links{
+    list-style: none;
+}
+
+.language-link{
+    text-decoration: none;
+  display: none;
+}
+
+.field--name-field-hero-image{
+  margin-top: 2em;
+}
+
+.field--name-field-hero-body{
+  margin: 2em 20%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2f2f2f;
+}
+
+@media only screen and (min-width: 750px)  {
+  .col-md-6 {
+    width: 50%;
+  }
+}
+.row .col-img img{
+  width: 90%;
+  height: auto;
+}
+
+.row .col-txt{
+  text-align: center;
+  padding: 0 5%;
+}
+
+.row .col-txt p{
+  margin-top: 3em;
+}
+
+.row .col-txt .field--name-field-title{
+  font-size: 2em;
+  color: royalblue;
+}
+
+.paragraph--type--view .field--type-text-long{
+  margin: 5em 20%;
+}
+
+.view-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.views-row{
+    width: 33%;
+    margin: 0 1em;
+    background-color: royalblue;
+    text-align: center;
+    border-radius: 0.5em;
+}
+
+.block-views-blocknews-latest-news{
+  margin-bottom: 4em;
+}
+
+.view-id-news .view-content .views-row{
+  background-color: #2f2f2f;
+}
+
+.view-id-news .view-content .views-row a:hover{
+  color: royalblue;
+}
+
+.view-id-news .view-content .views-row .field--name-field-news-category {
+  color: royalblue;
+}
+
+.views-row .field--type-text-long{
+  margin: 0.5em;
+}
+
+.views-row a{
+    text-decoration: none;
+    color: white;
+}
+
+.views-row a:hover{
+    color: tomato;
+}
+
+/*ABOUT PAGE*/
+.field--name-field-media-image img{
+  width: 50%;
+  height: auto;
+  border-radius: 0.5em;
+}
+
+.field--name-field-media-image{
+    text-align: center;
+}
+
+.paragraph-with-bg{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 400px;
+    padding-top: 5em;
+}
+
+.paragraph-with-bg .field--name-field-title{
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 2em;
+}
+
+.paragraph-with-bg .field--name-field-call-to-action a{
+  text-decoration: none;
+  background-color: white;
+  color: royalblue;
+  padding: 0.5em 2em ;
+  border-radius: 0.5em;
+}
+
+.paragraph-with-bg .field--name-field-call-to-action a:hover{
+  text-decoration: none;
+  background-color: royalblue;
+  color: white;
+  padding: 0.6em 2.1em ;
+  border-radius: 0.5em;
+}
+
+.paragraph-with-bg .field--name-field-call-to-action{
+  margin-top: 2em;
+}
+
+.paragraph--type--text-with-background-image img{
+    display: none;
+}
+
+.paragraph--type--text-with-image .col-txt-without-img p{
+  margin: 2em 20%;
+}
+
+.paragraph--type--text-with-image .col-txt-without-img .field--name-field-body{
+  margin-bottom: 3em;
+}
+
+.paragraph--type--text-with-image .col-txt-without-img .field--name-field-title{
+  text-align: center;
+  font-size: 1.5em;
+  color: royalblue;
+  margin-top: 2em;
+  font-weight: bold;
+}
+
+.paragraph--type--quote{
+  padding: 1em 0;
+  background-color: royalblue;
+}
+.quote{
+  font-style: italic;
+  margin: 0 20%;
+}
+
+.quote_extra .quote_img img{
+  width: 17%;
+  height: auto;
+  margin: 1em 0;
+}
+
+.quote_extra .quote_author{
+  text-align: center;
+}
+
+/*NEWS DETAIL PAGE*/
+
+.field--name-field-news-category{
+  margin: 2em 0 2em 10%;
+}
+.field--name-field-news-category a{
+  text-decoration: none;
+  color: royalblue;
+  background-color: #fff;
+  padding: 0.5em 2em;
+  border-radius: 0.5em;
+}
+
+.field--name-field-news-category .field__item{
+  margin-top: 1em;
+  display: inline;
+}
+
+/*CONTACT PAGE*/
+
+.contact-form .field--name-field-title{
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: royalblue;
+}
+
+.contact-form .field--type-text-long{
+  margin: 2em 20%;
+}
+
+.contact-form form{
+  text-align: center;
+}
+
+.contact-form .form-type-email input{
+  width: 60%;
+  background-color: transparent;
+  border: 2px solid royalblue;
+  border-radius: 0.5em;
+  color: white;
+  padding: 0.5em 0;
+  max-width: 400px;
+}
+
+.contact-form .form-textarea-wrapper textarea{
+  margin: 0 20%;
+  background-color: transparent;
+  border: 2px solid royalblue;
+  border-radius: 0.5em;
+  color: white;
+  max-width: 400px;
+}
+
+.contact-form #edit-submit{
+  background-color: royalblue;
+  color: white;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  border: none;
+}
+
+/*FAQ PAGE*/
+
+.faq-field{
+  margin: 4em 20%;
+}
+
+@media(max-width: 750px){
+/*MENU MOBILE*/
+  .menu-item{
+    display: block;
+    margin-bottom: 0.5em;
+  }
+
+  .main-menu{
+    text-align: center;
+    background-color: #2f2f2f;
+    padding-bottom: 1em;
+  }
+  /*HOME PAGE MOBILE*/
+  .row{
+    display: block;
+  }
+
+  .row .col-img img{
+    width: 80%;
+    height: auto;
+    margin-top: 1em;
+  }
+
+  .row .col-txt{
+    margin: 0 10%;
+  }
+
+  .view-content{
+    display: block;
+    text-align: center;
+  }
+
+  .views-row{
+    width: 80%;
+    margin-left: 10%;
+    padding: 1em  0;
+    margin-bottom: 1em;
+  }
+
+  .views-row .field--type-text-long{
+    margin: 0 2em;
+  }
+
+  /*ABOUT PAGE MOBILE*/
+  .paragraph-with-bg{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  /*NEWS DETAIL PAGE MOBILE*/
+  .field--name-field-news-category{
+    margin: 2em 0;
+  }
+
+  /*CONTACT PAGE MOBILE*/
+
+  .contact-form .form-textarea-wrapper textarea{
+    max-width: 60%;
+  }
+}
