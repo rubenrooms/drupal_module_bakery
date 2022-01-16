@@ -1,0 +1,5 @@
+name: Bakery
+type: module
+description: 'ordersystem for bread'
+core: 8.x
+package: Bakery
