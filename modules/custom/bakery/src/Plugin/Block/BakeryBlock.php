@@ -18,7 +18,9 @@ class BakeryBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-
+      return [
+        '#theme' => 'bakery',
+      ];
   }
 
 }

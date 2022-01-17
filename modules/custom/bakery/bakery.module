@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * Implements hook_theme()
+ */
+
+function bakery_theme() {
+  return [
+    'bakery' => [
+      'variables' => [],
+    ],
+  ];
+}

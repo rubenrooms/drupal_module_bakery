@@ -1,5 +1,5 @@
 name: Bakery
 type: module
 description: 'ordersystem for bread'
-core: 8.x
+core: 8.x || ^9
 package: Bakery
