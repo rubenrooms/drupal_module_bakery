@@ -20,6 +20,7 @@ class BakeryBlock extends BlockBase {
   public function build() {
       return [
         '#theme' => 'bakery',
+        '#attached' => ['library' => ['bakery/bakery']],
       ];
   }
 
