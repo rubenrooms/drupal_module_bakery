@@ -1,0 +1,6 @@
+bakery.admin.settings:
+  path: '/admin/config/user-interface/bakery/settings'
+  defaults:
+    _form: 'Drupal\bakery\Form\SettingsForm'
+  requirements:
+    _permission: 'access content'

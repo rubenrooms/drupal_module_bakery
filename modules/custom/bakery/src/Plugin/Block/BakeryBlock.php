@@ -18,9 +18,18 @@ class BakeryBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
+
+    $form = \Drupal::formBuilder()->getForm('Drupal\bakery\Form\SettingsForm');
       return [
+        $form,
         '#theme' => 'bakery',
         '#attached' => ['library' => ['bakery/bakery']],
+        /*         
+        '#first_name' => \Drupal::state()->get('bakery.first_name'),
+        '#last_name' => \Drupal::state()->get('bakery.last_name'),
+        '#phone' => \Drupal::state()->get('bakery.phone'),
+        */
+
       ];
   }
 
