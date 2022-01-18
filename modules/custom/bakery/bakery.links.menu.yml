@@ -1,0 +1,5 @@
+bakery.admin.settings:
+  title: 'Order form'
+  parent: system.admin_config_ui
+  description: 'Order your bread or pastry here.'
+  route_name: bakery.admin.settings
