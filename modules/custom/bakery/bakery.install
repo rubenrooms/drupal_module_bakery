@@ -1,0 +1,54 @@
+<?php
+
+/**
+ * Implements hook_schema().
+ */
+function bakery_schema() {
+  $schema['bakery_orders'] = [
+    'fields' => [
+      'id' => [
+        'description' => 'The primary identifier.',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+
+      'first_name' => [
+        'description' => 'first name',
+        'type' => 'varchar',
+        'length' => 128,
+        'not null' => TRUE,
+        'default' => '',
+      ],
+
+      'last_name' => [
+        'description' => 'last name',
+        'type' => 'varchar',
+        'length' => 128,
+        'not null' => TRUE,
+        'default' => '',
+      ],
+
+      'phone' => [
+        'description' => 'phone number',
+        'type' => 'varchar',
+        'length' => 128,
+        'not null' => TRUE,
+        'default' => '',
+      ],
+    ],
+    'primary key' => [
+      'id',
+    ],
+  ];
+
+  return $schema;
+}
+
+/**
+ * Create Bakery table.
+ */
+function bakery_update_8001(&$sandbox) {
+  $table = bakery_schema();
+  \Drupal::database()->schema()->createTable('bakery', $table['bakery']);
+}
